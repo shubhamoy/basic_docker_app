@@ -4,7 +4,7 @@
   "description": "A basic implementation of Docker using a simple node.js app",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "keywords": [
     "docker",
