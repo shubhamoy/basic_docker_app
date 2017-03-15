@@ -7,6 +7,9 @@ RUN mkdir -p /usr/src/app
 # Switch to app directory
 WORKDIR /usr/src/app
 
+# Bundle App Source
+COPY . /usr/src/app
+
 # Install app dependencies
 RUN npm install
 
@@ -14,7 +17,7 @@ RUN npm install
 RUN npm install pm2 -g
 
 # Start app with PM2
-CMD ["pm2-docker", "start -- npm"]
+CMD ["pm2-docker", "start", "npm", "--", "start"]
 
 # Open port
 EXPOSE 3000
