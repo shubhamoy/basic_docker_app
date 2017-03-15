@@ -14,7 +14,7 @@ RUN npm install
 RUN npm install pm2 -g
 
 # Start app with PM2
-CMD ["pm2-docker", "app.js"]
+CMD ["pm2-docker", "start -- npm"]
 
 # Open port
 EXPOSE 3000
