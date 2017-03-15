@@ -10,8 +10,11 @@ WORKDIR /usr/src/app
 # Install app dependencies
 RUN npm install
 
+# Install PM2 Globally
+RUN npm install pm2 -g
+
+# Start app with PM2
+CMD ["pm2-docker", "app.js"]
+
 # Open port
 EXPOSE 3000
-
-CMD [ "npm", "start" ]
-
