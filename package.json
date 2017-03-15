@@ -1,6 +1,6 @@
 {
   "name": "basic-docker-app",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A basic implementation of Docker using a simple node.js app",
   "main": "app.js",
   "scripts": {
