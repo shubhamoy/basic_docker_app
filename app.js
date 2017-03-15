@@ -13,6 +13,7 @@ function getRandomInt(min, max) {
 }
 
 io.sockets.on('connection', (socket) => {
+	console.log("New Socket Connection from", socket.handshake.address);
   setInterval(() => {
     let recData = getRandomInt(50, 100);
 		let tataData = getRandomInt(75, 150);
@@ -26,5 +27,5 @@ io.sockets.on('connection', (socket) => {
 });
 
 server.listen(port, host, ()=>{
-	console.log("Server is Running at",host+":"+port);
+	console.log("Server is Running at http://",host+":"+port);
 });
