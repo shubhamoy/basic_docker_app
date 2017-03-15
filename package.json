@@ -11,5 +11,8 @@
     "node.js"
   ],
   "author": "Shubhamoy Chakrabarty <me@shubhamoy.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
 }
