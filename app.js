@@ -3,6 +3,7 @@ let http = require('http');
 let express = require('express');
 let app = express();
 let port = process.env.PORT || 3000;
+let host = process.env.HOST || "0.0.0.0";
 app.use(express.static(__dirname + '/public'));
 let server = http.Server(app);
 let io = require('socket.io')(server);
@@ -24,4 +25,6 @@ io.sockets.on('connection', (socket) => {
 	}, 1000);
 });
 
-server.listen(port, "0.0.0.0");
+server.listen(port, host, ()=>{
+	console.log("Server is Running at",host+":"+port);
+});
