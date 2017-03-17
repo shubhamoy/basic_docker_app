@@ -7,8 +7,12 @@ All credits to Matthew Campbell's repo(https://github.com/mattkanwisher/demo_sto
 ## How to run the app?
 * Install Docker (https://docs.docker.com/engine/installation/)
 * Open your terminal or command prompt
-* docker run -it -p 3000:3000 shubhamoy/basic_docker_app
+* docker run -d -p 3000:3000 shubhamoy/basic_docker_app
 * Point your browser to http://127.0.0.1:3000
+
+## Alternative
+* If you're on a *nix machine then run the shell script
+* `bash start.sh`
 
 ## Docker Image
 https://hub.docker.com/r/shubhamoy/basic_docker_app/
