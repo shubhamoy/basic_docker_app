@@ -8,7 +8,7 @@ All credits to Matthew Campbell's Repo(https://github.com/mattkanwisher/demo_sto
 * Install Docker (https://docs.docker.com/engine/installation/)
 * Open your terminal or command prompt
 * Clone this repo `git clone https://github.com/shubhamoy/basic_docker_app.git`
-~~*Run `docker run -d -p 3000:3000 shubhamoy/basic_docker_app`~~
+* ~~Run `docker run -d -p 3000:3000 shubhamoy/basic_docker_app`~~
 * Run `docker-compose up`
 * Point your browser to http://127.0.0.1:3000
 
