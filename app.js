@@ -13,19 +13,19 @@ function getRandomInt(min, max) {
 }
 
 io.sockets.on('connection', (socket) => {
-	console.log("New Socket Connection from", socket.handshake.address);
+  console.log("New Socket Connection from", socket.handshake.address);
   setInterval(() => {
-    let recData = getRandomInt(50, 100);
-		let tataData = getRandomInt(75, 150);
-		let gailData = getRandomInt(25, 125);
-		io.sockets.emit('tickerData', [
-			{rdata: recData},
-			{tdata: tataData},
-			{gdata: gailData}
-		]);
-	}, 1000);
+    let recData = getRandomInt(125, 161);
+    let tataData = getRandomInt(328, 437);
+    let gailData = getRandomInt(287, 502);
+    io.sockets.emit('tickerData', [
+      {rdata: recData},
+      {tdata: tataData},
+      {gdata: gailData}
+    ]);
+  }, 1000);
 });
 
 server.listen(port, host, ()=>{
-	console.log("Server is Running at http://",host+":"+port);
+  console.log("Server is Running at http://",host+":"+port);
 });
