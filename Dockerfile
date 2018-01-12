@@ -1,14 +1,11 @@
 # Install node.js Alpine
 FROM node:alpine
 
-# Create app directory
-RUN mkdir -p /usr/src/app
-
 # Switch to app directory
-WORKDIR /usr/src/app
+WORKDIR /srv
 
 # Bundle App Source
-COPY . /usr/src/app
+COPY . /srv
 
 # Install PM2 Globally
 RUN npm install pm2 -g
