@@ -1,5 +1,5 @@
-# Install node.js v6.10 LTS
-FROM node:boron
+# Install node.js Alpine
+FROM node:alpine
 
 # Create app directory
 RUN mkdir -p /usr/src/app
@@ -9,9 +9,6 @@ WORKDIR /usr/src/app
 
 # Bundle App Source
 COPY . /usr/src/app
-
-# Install app dependencies
-RUN npm install
 
 # Install PM2 Globally
 RUN npm install pm2 -g
